@@ -1,0 +1,11 @@
+generate bom using next Header
+Part Reference\tPart Type\tKOMP_NAME\tQuantity\tValue\tДокумент\tPart Number\tKOMP_ID
+
+and property string
+{Reference}\t{Part Type}\t{KOMP_NAME}\t{Quantity}\t{Value}\t{Документ}\t{Part Number}\t{KOMP_ID}
+
+check "open in Excel" box!
+
+
+use command
+awk -f /script_path/genlistfrombom.awk < /bom_path/DESHK_301411_161_E3.BOM > /sorted_bom_path/DESHK_301411_161_E3.txt
